@@ -1,16 +1,99 @@
-# React + Vite
+# 🌐 Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, responsive, and interactive personal portfolio website built with **React** and **Vite** to showcase my professional profile, technical skills, projects, certifications, and resume.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* 🌙 Dark & Light Theme Toggle
+* ⚡ Responsive and Modern UI
+* ⌨️ Animated Typewriter Effect
+* 📂 Project Showcase
+* 🏆 Certifications Section
+* 📄 Resume Download
+* 📧 One-Click Email Copy
+* 💼 LinkedIn & GitHub Integration
+* 💬 WhatsApp "Hire Me" Button
+* 🎨 Clean & Professional User Interface
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React.js
+* Vite
+* JavaScript (ES6+)
+* HTML5
+* CSS3
+* React Icons
+* React Simple Typewriter
 
-## Expanding the Oxlint configuration
+## 📸 Portfolio Sections
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+<h3>🏠 Home</h3>
+<p align="center">
+  <img src="README-assets/home.png" width="900">
+</p>
+
+<h3>💻 Projects</h3>
+<p align="center">
+  <img src="README-assets/Projects.png" width="900">
+</p>
+
+<h3>📬 Contact</h3>
+<p align="center">
+  <img src="README-assets/certifications.png" width="900">
+</p>
+
+## 🚀 Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/anshika2410-hub/Personal_Portfolio.git
+```
+
+Navigate to the project folder:
+
+```bash
+cd Personal_Portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+## 📄 Resume
+
+A downloadable resume is available directly from the portfolio.
+
+## 🌐 Live Demo
+
+The portfolio will be deployed on Vercel soon.
+
+> Live URL: *Coming Soon*
+
+## 📬 Contact
+
+**Anshika Agrawal**
+
+* GitHub: https://github.com/anshika2410-hub
+* LinkedIn: *Add your LinkedIn profile URL here*
+* Email: *Add your professional email address here*
+
+## 🤝 Contributing
+
+Contributions, suggestions, and feedback are welcome. Feel free to fork the repository, create a new branch, and submit a pull request.
+
+## 📜 License
+
+This project is available for educational and personal use.
+
+---
+
+⭐ If you found this project helpful, consider giving it a star on GitHub.
