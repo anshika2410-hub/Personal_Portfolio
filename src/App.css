@@ -109,13 +109,14 @@ body {
 }
 /* HERO */
 .hero {
-  min-height:100vh;
-  padding:120px 20px 40px;
+  min-height: 100vh;
+  padding: 20px 40px;          /* ❌ remove 120px top padding */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  gap: 12px;                /* clean spacing between elements */
 }
 
 .tag {
@@ -504,7 +505,7 @@ body {
   .hero {
     height: auto;
     min-height: 100vh;
-    padding: 120px 20px 40px;
+    padding: 20px 40px;
   }
 
   .name {
