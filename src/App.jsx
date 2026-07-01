@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.css"; 
 import { useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
