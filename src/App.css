@@ -340,20 +340,20 @@ body {
 }
 .whatsapp-btn {
   position: fixed;
-  bottom: 25px;
-  right: 25px;
+  bottom: calc(25px + env(safe-area-inset-bottom));
+  right: calc(25px + env(safe-area-inset-right));
+
   background: rgba(255, 255, 255, 0.08);
   color: #fff;
   border: 1px solid rgba(255,255,255,0.2);
   backdrop-filter: blur(10px);
-  box-shadow: 0 0 20px rgba(99,102,241,0.3);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
   padding: 12px 18px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
   transition: 0.3s;
-  z-index:999;
+  z-index: 999;
 }
 
 .whatsapp-btn:hover {
@@ -550,6 +550,13 @@ body {
   .footer {
     width: 95%;
   }
+  .whatsapp-btn {
+    right: 15px;
+    bottom: 15px;
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
 
 }
 
