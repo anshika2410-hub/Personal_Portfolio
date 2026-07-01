@@ -1,7 +1,13 @@
+html{
+   scroll-behavior:smooth;
+}
 body {
   background: linear-gradient(-45deg, #0f172a, #111827, #0b1220, #1e293b);
   background-size: 400% 400%;
   animation: gradientMove 12s ease infinite;
+  margin:0;
+  overflow-x:hidden;
+  font-family: "Poppins", sans-serif;
 }
 
 @keyframes gradientMove {
@@ -21,6 +27,8 @@ body {
   min-height: 100vh;
   transition: all 0.3s ease;
   overflow-x: hidden;
+  width:100%;
+
 }
 
 .dark {
@@ -37,10 +45,20 @@ body {
 .navbar {
   position: sticky;
   top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
-  padding: 20px 10%;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px 5%;
+  background:rgba(11,18,32,.75);
   backdrop-filter: blur(10px);
+}
+.light .navbar{
+   background:rgba(255,255,255,.75);
 }
 
 .logo {
@@ -67,7 +85,8 @@ body {
 
 /* HERO */
 .hero {
-  height: 90vh;
+  min-height:100vh;
+  padding:120px 20px 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,7 +99,7 @@ body {
 }
 
 .name {
-  font-size: 70px;
+  font-size:clamp(38px,8vw,70px);
   font-weight: bold;
   background: linear-gradient(90deg, #38bdf8, #a78bfa);
   -webkit-background-clip: text;
@@ -92,7 +111,9 @@ body {
 }
 
 .desc {
-  max-width: 600px;
+  width:90%;
+  max-width:600px;
+  margin:auto;
   opacity: 0.8;
 }
 
@@ -126,7 +147,8 @@ body {
 }
 
 .card {
-  width: 270px;
+  width:100%;
+  max-width:320px;
   padding: 20px;
   border-radius: 16px;
   background: rgba(255,255,255,0.05);
@@ -139,7 +161,7 @@ body {
   box-shadow: 0 10px 30px rgba(56,189,248,0.2);
 }
 .heading {
-  font-size: 38px;
+   font-size:clamp(28px,5vw,38px);
   font-weight: 700;
   margin-bottom: 20px;
   color: #38bdf8;
@@ -164,6 +186,8 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
   position: relative;
 }
 
@@ -302,6 +326,7 @@ body {
   font-weight: bold;
   box-shadow: 0 10px 20px rgba(0,0,0,0.3);
   transition: 0.3s;
+  z-index:999;
 }
 
 .whatsapp-btn:hover {
@@ -325,6 +350,10 @@ body {
 .copy-btn:hover {
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 12px 25px rgba(99, 102, 241, 0.4);
+}
+.bg-orbs{
+   overflow:hidden;
+   pointer-events:none;
 }
 .bg-orbs span {
   position: absolute;
@@ -365,6 +394,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   color: white;
+  margin-top:10px;
 
   background: linear-gradient(135deg, #38bdf8, #6366f1);
   box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
@@ -431,6 +461,15 @@ body {
 }
 
 @media (max-width: 768px) {
+  .dropdown{
+      left:50%;
+      transform:translateX(-50%);
+  }
+  .profile {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
   .navbar {
     flex-direction: column;
@@ -441,7 +480,7 @@ body {
   .hero {
     height: auto;
     min-height: 100vh;
-    padding: 80px 20px;
+    padding: 120px 20px 40px;
   }
 
   .name {
@@ -499,18 +538,18 @@ body {
     font-size: 16px;
   }
 
-  .btn,
-  .resume-btn,
-  .copy-btn {
-    width: 100%;
-    max-width: 260px;
-  }
 
   .whatsapp-btn {
     bottom: 15px;
     right: 15px;
     padding: 10px 15px;
     font-size: 14px;
+    z-index:999;
   }
+  .resume-btn,
+.copy-btn,
+.btn{
+   display:block;
+   margin:auto;
 
-}
+}}
