@@ -68,9 +68,13 @@ export default function App() {
   </div>
 
   <div className="nav-actions">
-    <a href="Resume2(1).pdf" download className="resume-btn">
-      📄 Resume
-    </a>
+    <a
+  href={`${import.meta.env.BASE_URL}Resume2(1).pdf`}
+  download
+  className="resume-btn"
+>
+  📄 Resume
+</a>
 
     <button
       onClick={() => setDark(!dark)}
