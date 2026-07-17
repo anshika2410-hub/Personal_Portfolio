@@ -70,13 +70,13 @@ npm run dev
 
 ## 📄 Resume
 
-A downloadable resume is available directly from the portfolio.
+A resume is available directly from the portfolio.
+
 
 ## 🌐 Live Demo
 
-The portfolio will be deployed on Vercel soon.
+> Live URL: *https://anshika2410-hub.github.io/Personal_Portfolio/*
 
-> Live URL: *Coming Soon*
 
 ## 📬 Contact
 
