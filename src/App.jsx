@@ -70,7 +70,8 @@ export default function App() {
   <div className="nav-actions">
     <a
   href={`${import.meta.env.BASE_URL}Resume2(1).pdf`}
-  download
+  target="_blank"
+  rel="noopener noreferrer"
   className="resume-btn"
 >
   📄 Resume
