@@ -115,59 +115,187 @@ export default function App() {
       </header>
 
       {/* ABOUT */}
-      <section id="about" className="section">
-        <h2 className="heading">About Me</h2>
+<section id="about" className="section">
+  <h2 className="heading">About Me</h2>
 
-        <p className="text">
-          Software Developer | Computer Science Engineering Graduate (AI & ML specialization)
-        </p>
+  <div className="about-content">
+    <p>
+      Computer Science Engineering Graduate with a specialization in
+      Artificial Intelligence & Machine Learning, passionate about building
+      modern web applications and AI-powered solutions.
+    </p>
 
-        <p className="text">
-          I am passionate about building intelligent and user-friendly applications using modern technologies.
-        </p>
+    <p>
+      Skilled in <strong>React</strong>, <strong>Node.js</strong>, <strong>Express.js</strong>, <strong>MongoDB</strong>, <strong>Python</strong>, <strong>FastAPI</strong>, <strong>LangGraph</strong>, <strong>SQL</strong>, <strong>Git</strong>, <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript
+      </strong> through hands-on academic and personal projects.
+    </p>
 
-        <p className="text">
-          I have hands-on experience in Python, Flask, OpenCV, React, and MySQL.
-        </p>
-
-        <p className="text">
-          I am actively seeking opportunities to grow as a Software Developer.
-        </p>
-      </section>
+    <p>
+      Currently seeking <strong>Software Developer</strong> and
+      <strong> Full Stack Developer</strong> opportunities to build
+      impactful products and continuously grow as a developer.
+    </p>
+  </div>
+</section>
 
       {/* SKILLS */}
-      <section id="skills" className="section">
-        <h2 className="heading">Skills</h2>
-        <div className="grid">
-          {[
-            "Python","JavaScript","React","Flask",
-            "OpenCV","Git","MySQL","HTML","CSS"
-          ].map((skill, i) => (
-            <span key={i} className="chip">{skill}</span>
-          ))}
-        </div>
-      </section>
+<section id="skills" className="section">
+  <h2 className="heading">Skills</h2>
+
+  <div className="skills-container">
+
+    <div className="skill-category">
+      <h3>Frontend</h3>
+      <div className="skill-list">
+        {[
+          "React",
+          "JavaScript",
+          "HTML5",
+          "CSS3",
+          "Vite"
+        ].map((skill) => (
+          <span key={skill} className="chip">{skill}</span>
+        ))}
+      </div>
+    </div>
+
+    <div className="skill-category">
+      <h3>Backend</h3>
+      <div className="skill-list">
+        {[
+          "Node.js",
+          "Express.js",
+          "FastAPI"
+        ].map((skill) => (
+          <span key={skill} className="chip">{skill}</span>
+        ))}
+      </div>
+    </div>
+
+    <div className="skill-category">
+      <h3>Database</h3>
+      <div className="skill-list">
+        {[
+          "MongoDB",
+          "SQLite",
+          "MySQL"
+        ].map((skill) => (
+          <span key={skill} className="chip">{skill}</span>
+        ))}
+      </div>
+    </div>
+
+    <div className="skill-category">
+      <h3>AI & Tools</h3>
+      <div className="skill-list">
+        {[
+          "Python",
+          "LangGraph",
+          "Socket.IO",
+          "Git",
+          "GitHub",
+          "REST API"
+        ].map((skill) => (
+          <span key={skill} className="chip">{skill}</span>
+        ))}
+      </div>
+    </div>
+
+  </div>
+</section>
 
       {/* PROJECTS */}
       <section id="projects" className="section">
         <h2 className="heading">Projects</h2>
 
         <div className="cards">
-          <div className="card">
-            <h3>AI Attendance System</h3>
-            <p>Face recognition based attendance system using OpenCV & Flask.</p>
-          </div>
+          <a
+  href="https://github.com/anshika2410-hub/AI-First-CRM"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="project-link"
+>
+  <div className="card">
+    <h3>🤖 AI First CRM</h3>
+<p>
+AI-powered CRM with AI chat, conversation summaries, sentiment analysis, and follow-up recommendations.
+</p>
 
-          <div className="card">
-            <h3>Portfolio Website</h3>
-            <p>Modern responsive portfolio built using React.</p>
-          </div>
+<div className="tech-stack">
+  <span>React</span>
+  <span>FastAPI</span>
+  <span>Python</span>
+  <span>LangGraph</span>
+  <span>SQLite</span>
+</div>
+  </div>
+  </a>
+  <a
+  href="https://github.com/anshika2410-hub/realtime-chat-app"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="project-link"
+>
+  <div className="card">
+    <h3>💬 Real-Time Chat Application</h3>
+  <p>
+    Real-time MERN chat app with authentication, instant messaging, online status, typing indicators, and image sharing.
+  </p>
 
-          <div className="card">
-            <h3>E-Commerce UI</h3>
-            <p>Frontend shopping UI with modern design system.</p>
-          </div>
-        </div>
+  <div className="tech-stack">
+  <span>React</span>
+  <span>Node.js</span>
+  <span>Express</span>
+  <span>MongoDB</span>
+  <span>Socket.IO</span>
+</div>
+  </div>
+  </a>
+
+  <a
+  href="https://github.com/anshika2410-hub/AI-based-Attendance-management-system"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="project-link"
+>
+  <div className="card">
+    <h3>🧑‍💻 AI Attendance System</h3>
+<p>
+Face recognition attendance system that automatically detects users and records attendance with improved accuracy.
+</p>
+
+<div className="tech-stack">
+  <span>Python</span>
+  <span>Flask</span>
+  <span>OpenCV</span>
+  <span>Face Recognition</span>
+</div>
+  </div>
+  </a>
+
+  <a
+  href="https://github.com/anshika2410-hub/Personal_Portfolio"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="project-link"
+>
+  <div className="card">
+    <h3>🌐 Personal Portfolio</h3>
+<p>
+Responsive portfolio showcasing projects, skills, certifications, resume, and contact information.
+</p>
+
+<div className="tech-stack">
+  <span>React</span>
+  <span>Vite</span>
+  <span>CSS3</span>
+  <span>HTML5</span>
+  <span>Javascript</span>
+</div>
+  </div>
+  </a>
+
+</div>
       </section>
 
       {/* CERTIFICATIONS */}
@@ -221,6 +349,10 @@ export default function App() {
   💬 Hire Me
 </a>
   </div>
+
+  <p className="copyright">
+  © 2026 Anshika Agrawal. Built with React & Vite.
+</p>
 </footer>
 
     </div>
