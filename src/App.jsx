@@ -68,7 +68,7 @@ export default function App() {
   </div>
 
   <div className="nav-actions">
-    <a href="Resume.pdf" download className="resume-btn">
+    <a href="Resume2(1).pdf" download className="resume-btn">
       📄 Resume
     </a>
 
